@@ -1,0 +1,17 @@
+syntax = "proto3";
+package carpchaintestnet.carpchaintestnet;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "carpchaintestnet/carpchaintestnet/params.proto";
+
+option go_package = "github.com/carpchain/carpchain-testnet/x/carpchaintestnet/types";
+
+// GenesisState defines the carpchaintestnet module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

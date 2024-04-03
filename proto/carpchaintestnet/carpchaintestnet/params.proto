@@ -1,0 +1,15 @@
+syntax = "proto3";
+package carpchaintestnet.carpchaintestnet;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/carpchain/carpchain-testnet/x/carpchaintestnet/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "carpchaintestnet/x/carpchaintestnet/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
