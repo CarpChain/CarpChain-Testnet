@@ -1,22 +1,23 @@
 version: 1
 validation: sovereign
 accounts: 
-- name: alice
+- name: WhiteTruffle
   coins:
-  - 20000token
-  - 200000000stake
-- name: bob
+  - 10000000000koikrystal
+  - 105000000bitpearl
+- name: Tectract
   coins:
-  - 10000token
-  - 100000000stake
+  - 10000000000koikrystal
+  - 105000000bitpearl
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
-  name: bob
+  name: Tectract
   coins:
-  - 5token
-  - 100000stake
+  - 1000000000koikrystal
 validators:
-- name: alice
-  bonded: 100000000stake
+- name: WhiteTruffle
+  bonded: 1000000000bitpearl
+- name: 
+  bonded: 1000000000bitpearl
